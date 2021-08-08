@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>formulario</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        
+    </head>
+    <body>
+    
+        <div class="form">
+            <form action="form.php" method="POST">
+
+                <p>Nombre</p>
+                <label for="nombre">su nombre</label>
+                <br>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <p>apellido_paterno</p>
+                <label for="apellido">apellido_paterno</label>
+                <br>
+                <input type="text" name="apellido_paterno" placeholder="Apellido " required>
+                <p>Usuario</p>
+                <label for="usuario">usuario</label>
+                <br>
+                <input type="text" name="usuario" placeholder="usuario" required>
+                <p>Contraseña</p>
+                <label for="Contraseña">contraseña</label>
+                <br>
+                <input type="password" name="contraseña" placeholder="12345678" required>
+                <p>Correo</p>
+                <label for="correo">direccion</label>
+                <br>
+                <input type="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
