@@ -1,0 +1,207 @@
+body{
+    background-color: rgb(247, 248, 248);
+}
+p{
+    color:  white;
+    background: black;
+    text-align: center;
+    border-bottom: 10px;
+}
+h1{
+    background-color: rgb(4, 82, 102);
+    text-align: center;
+    line-height: 100px;
+    color:  aquamarine;
+    border-bottom: 3px ;
+    font-size: 4em;
+    padding: 0.5cm;
+    margin: 0cm;
+}
+#last{
+    background-color: rgb(255, 255, 255);
+}
+
+h3{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+h2{
+    background-color: rgb(4, 82, 102);
+    text-align: center;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+}
+h4{
+     color:  black;
+    background: transparent;
+    text-align: center;
+}
+}
+#content{
+    float:left;
+    width: 80%;
+    min-height: 500px;
+    background: rgb(62, 231, 28);
+}
+aside{
+    float: left ;
+    width: 20%;
+    min-height: 500px;
+}
+footer{
+    background:rgb(241, 241, 241) ;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width:  auto;
+    margin: auto;
+    border: 1px solid blank;
+}
+form {
+    text-align: center;
+}
+section{
+    background-color: rgb(50, 194, 163)
+}
+/*/////// estilos generales ///////*/
+/*/////// aqui voy a trabajar con el menu ///////*/
+nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+nav ul li{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li {
+    padding: 8px;
+    margin: 4px;
+    list-style-type: none;
+    float: left;
+    background: rgb(43, 226, 226);
+    color: rgb(5, 5, 5);
+    text-transform: uppercase;
+    width: 70px;
+    text-align: center;
+    font-size: 10p;
+    text-align: center;
+    transition: all 1s;
+}
+.clearfix{
+    clear:both;
+}
+nav ul li:first-child {
+    border-radius: 15px 0px 0px 15px;
+}
+nav ul li:last-child{
+    border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background: rgb(0, 0, 0);
+    color:rgb(43, 226, 226);
+}
+
+/*/////// aqui voy a trabajar con el menu ///////*/
+
+/*/////// estilo de cabecera ///////*/
+#imagenlogo{
+    float:left;
+    margin-right: 20px;
+}
+@font-face{
+    font-family: Baby Rose;
+    src: url("fuente/Baby Rose.otf");
+}
+
+h1,h2{
+    font-family: Baby Rose;
+    font-size: 75px;
+}
+p{
+    font-family: Baby Rose;
+    font-size: 35px;
+}
+
+h6{
+    font-family: Baby Rose;
+    font-size: 20px;
+}
+
+
+/*/////// estilo de cabecera estilizas parrafos de cabecera ///////*/
+
+
+/*/////// carousel ///////*/
+#carousel #contenedorcarrusel .diapositiva img{
+    width: 100%;
+}
+#carousel #contenedorcarrusel .diapositiva{
+    width: 200px;
+    height: 200px;
+    float:left;
+}
+#contenedorcarrusel{
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+#mascara{
+width: 34000px;
+height: 800px;
+animation: mueve 10s;
+animation-iteration-count: infinite;
+position: relative;
+}
+
+@keyframes mueve{
+    0%{left: 0px}
+    20%{left: 0px}
+    25%{left: -800px}
+    45%{left: -800px}
+    50%{left: -1600px}
+    70%{left: -1600px}
+    75%{left: -2400px}
+    100%{left: -2400px}
+    100%{left: -3200px}
+}
+/*/////// carousel ///////*/
+
+/*/////// block  ///////*/
+#blog article{
+    width: 25%;
+    float: left;
+
+}
+/*paso 2 */
+#blog article img{
+    width: 75%;
+}
+/*paso 5 */
+#blog article .contienearticulo{
+    padding: 10px;
+}
+/*/////// block  ///////*/
+
+/*/////// destacados  ///////*/
+#highlights article{
+    width: 20%;
+    float: left;
+
+}
+/*paso 2 */
+#highlights article img{
+    width: 75%;
+}
+/*paso 5 */
+#highlights article.contienearticulo{
+    padding: 5px;
+}
+/*/////// destacados ///////*/
+/*/////// destacados ///////*/
+
+

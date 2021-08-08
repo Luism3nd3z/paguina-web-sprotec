@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+		<body><h1> SPROTEC</h1><body>
+	<style>
+		html,body{ background-color: rgb(247, 248, 248);}
+		main{height: 100%}
+		header{height: 300px;}
+		section article{
+			width: 200px;
+			height: 200px;
+			float: left;
+			/*border: 1px solid white;*/
+		
+			position: relative;
+			margin: 4px;
+			transform: scale(1,1);
+			z-index: 1;
+			transition: all 1s;
+		}
+		section article img{
+			width: 100%;
+			position: auto;
+			top: 130px;
+			left: 1px;
+		}
+		section article h3,section article h4, section article p{
+			position: absolute;
+		}
+		.aumentado{
+			z-index: 1000;
+			transform: scale(1.4,1.4);
+			border: 5px solid rgb(247, 248, 248);
+			box-shadow: 10px 5px 5px 10px rgb(4, 82, 102);
+		}
+		section{
+			padding-top: 50px;
+			width: 200%;
+			height: 300px;
+			overflow: hidden;
+
+		}
+		section .ribbon{
+			width: 4000px;
+			position: relative;
+			left: 0px;
+			transition: all 1s;
+		}
+		.botonredondo{
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			background: rgb(156, 432, 0);
+			color: rgb(0, 0, 0);
+			font-size: 30px;
+			text-align: center;
+			line-height: 30px;
+			font-weight: bold;
+			position: absolute;
+		}
+		.botones{
+			width: 100%;
+			position: absolute;
+			z-index: 1000; /*para traer los botones al frente*/
+		}
+		.anterior{
+			top: 100px;
+			transform: rotate(180deg);
+		}
+		.posterior{
+			right: 20px;
+			top: 100px;
+		}
+		h1{
+	  		background-color: rgb(4, 82, 102);
+		    text-align: center;
+		    line-height: 100px;
+		    color:  aquamarine;
+		    border-bottom: 3px ;
+		    font-size: 4em;
+		    padding: 0.5cm;
+		}
+		footer{
+			background-color:rgb(135, 16, 161);
+			border: 1px solid blank;
+			width: auto;
+			margin: 45px;
+		}
+		h3{
+			color: rgb(0, 0, 0);
+		}
+
+	</style>
+	<script src="lib/jquery-3.6.0.min.js">
+		
+	</script>
+	<script>
+		var desfase = 0; //esto lo hago al final de poner el .ribbon.css
+		$(document).ready(function(){
+			$("section article").hover (function(){
+			$(this).addClass("aumentado")	
+			})
+			$("section article").mouseout (function(){
+			$(this).removeClass("aumentado")	
+			})
+			$(".anterior").click (function(){
+				//console.log("Izquierdo"); primero lo pruebo asi y despues modifico en el ribbon:position,left, transition.
+				desfase--;
+				$(".ribbon").css("left",(desfase*200)+"px")
+			})
+			$(".posterior").click (function(){
+				//console.log("Derecho");
+				desfase++;
+				//$(".ribbon").css("left","200px")
+				$(".ribbon").css("left",(desfase*200)+"px")
+			})
+		})
+
+	</script>
+</head>
+<body>
+	<main>
+
+		<form method="get" action="https://www.google.com/search" target="_blank">
+			<input type="search" name="q" placeholder="buscar" autofocus required>
+			<input type="submit"> 
+			</form>
+		
+		<div id="container">
+			<section>
+				<div class="botones">
+					<div class="botonredondo anterior">
+						>	
+					</div>
+					<div class="botonredondo posterior">
+						>
+					</div>
+				</div>
+				<div class="ribbon">	
+					<article>
+						<div class="contenido">
+							<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img1.jpg">
+								</a>
+								<br><h3>PUMA X-RAY </h3><br><br>
+								<p> construcción de mallas y cuero, que los hacen frescos </p>
+						
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img2.jpg">
+								</a>
+								<br><h3>PUMA ANZARUN </h3><br><br>
+								<p>comodidad y estilo mientras te ejercitas,diseño ligero. </p>
+						
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img3.jpg">
+								</a>
+								<br><h3>NIJE ALTASPORT</h3><br><br>
+								<p>Altasport K es un nuevo producto para Niños de adidas </p>
+						
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img7.jpg">
+								</a>
+								<br><h3> CASUAL LACOSTE </h3><br><br>
+								<p> capacidad de respuesta adecuadas en cada paso. </p>	
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img4.png">
+								</a>
+								<br><h3>NIKE NITEBALL</h3><br><br>
+								<p>  conservas la ligereza en tus pies. </p>
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img5.png">
+								</a>
+								<br><h3>JORDAN 1</h3><br><br>
+								 <p>Esenciales para llevar a cabo tus rutinas de ejercicio </p>
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img6.jpg">
+								</a>
+								<br><h3>REEBOOK NPC II</h3><br><br>
+								<p>presentan un diseño con un suave exterior en cuero sintético </p>
+							</div>
+						</article>
+						<article>
+							<div class="contenido">
+								<a href="https://www.youtube.com/watch?v=rHzbvx35v_A">
+								<img src="photos/img6.jpg">
+								</a>
+								<br><h3>REEBOOK NPC II</h3><br><br>
+								<p> presentan un diseño con un suave exterior en cuero sintético </p>
+							</div>
+						</article>
+				</div>
+			</section>
+       </div>
+
+	</main>
+</body>
+</html>
